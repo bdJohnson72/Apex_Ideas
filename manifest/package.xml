@@ -15,6 +15,7 @@
     <types>
         <members>myFirstTest</members>
         <members>helloBinding</members>
+        <members>getterRecipe</members>
         <name>LightningComponentBundle</name>
     </types>
     <version>52.0</version>
