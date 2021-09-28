@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>IRepository</members>
+        <members>OpportunityLineItemRepo</members>
+        <members>OpportunityLineItemRepoMock</members>
+        <members>OpportunityUpdater</members>
+        <members>OpportunityUpdater_Tests</members>
+        <members>OrderUpdater</members>
+        <members>Query</members>
+        <members>Repository</members>
+        <members>Repository_Tests</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>myFirstTest</members>
+        <members>helloBinding</members>
+        <name>LightningComponentBundle</name>
+    </types>
+    <version>52.0</version>
+</Package>

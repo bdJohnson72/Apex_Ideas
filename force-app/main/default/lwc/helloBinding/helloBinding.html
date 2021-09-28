@@ -1,0 +1,13 @@
+<!--
+ - Created by Brooks Johnson on 9/28/2021.
+ -->
+
+<!-- Hello Binding -->
+<template>
+    <lightning-card title="Hello binding" icon-name="custom:custom14">
+        <div class="slds-m-around_medium">
+            <p>Hello, {greeting}</p>
+        </div>
+        <lightning-input label="Name" value={greeting} onchange={handleChange}></lightning-input>
+	    </lightning-card>
+</template>
