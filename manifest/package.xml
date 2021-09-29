@@ -16,6 +16,7 @@
         <members>myFirstTest</members>
         <members>helloBinding</members>
         <members>getterRecipe</members>
+        <members>conditionalRenderingRecipe</members>
         <name>LightningComponentBundle</name>
     </types>
     <version>52.0</version>
