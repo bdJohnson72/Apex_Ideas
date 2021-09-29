@@ -1,0 +1,23 @@
+<!--
+ - Created by Brooks Johnson on 9/29/2021.
+ -->
+
+<!-- Conditional Rendering Recipe -->
+<template>
+    <lightning-card title="Conditional Rendering Recipe">
+        <div class="slds-m-around_medium">
+            <lightning-input type="checkbox"
+                             label="Show Secret"
+                             onchange={changeHandler}>
+            </lightning-input>
+            <div class="slds-m-around_medium userInfo">
+                <template if:true={visible}>
+                    The secret message
+                </template>
+                <template if:false={visible}>
+                    ***********
+                </template>
+            </div>
+        </div>
+    </lightning-card>
+</template>
