@@ -1,0 +1,27 @@
+<!--
+ - Created by Brooks Johnson on 10/1/2021.
+ -->
+
+<!-- Iteration With Test -->
+<template>
+    <lightning-card title="For Each Recipe" icon-name="custom:custom14">
+        <ul class="slds-m-around_medium forEachList" >
+            <template for:each={userList} for:item="user">
+                <li key={user.Id}>
+                    {user.name}
+                </li>
+            </template>
+        </ul>
+    </lightning-card>
+    <lightning-card title="Iterator Recipe" icon-name="custom:custom14">
+        <ul class="slds-m-around_medium iteratorList">
+            <template iterator:it={userList}>
+                <li key={it.value.Id}>
+                    <div if:true={it.first} class='slds-border_bottom'>First</div>
+                    <div class="mainlist">{it.value.name}</div>
+                    <div if:true={it.last} class="slds-border_top">Last</div>
+                </li>
+            </template>
+        </ul>
+    </lightning-card>
+</template>
