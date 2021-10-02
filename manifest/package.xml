@@ -10,6 +10,19 @@
         <members>Query</members>
         <members>Repository</members>
         <members>Repository_Tests</members>
+        <members>RevenueRecognition</members>
+        <members>Money</members>
+        <members>MFDate</members>
+        <members>Money_Tests</members>
+        <members>RevenueRecognition_Tests</members>
+        <members>Contract_Tests</members>
+        <members>Contract</members>
+        <members>ContractII</members>
+        <members>Product</members>
+        <members>RecognitionStrategy</members>
+        <members>CompleteRecognitionStrategy</members>
+        <members>ThreeWayRecognitionStrategy</members>
+        <members>ContractII_Tests</members>
         <name>ApexClass</name>
     </types>
     <types>
