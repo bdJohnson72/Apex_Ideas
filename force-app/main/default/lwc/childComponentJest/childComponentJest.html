@@ -1,0 +1,20 @@
+<!--
+ - Created by Brooks Johnson on 10/4/2021.
+ -->
+
+<!-- Child Component Jest -->
+<template>
+    <template if:true={userDetails}>
+        <lightning-layout vertical-align='center'>
+            <lightning-layout-item >
+                <div class='userInfo'>
+                    {userDetails.name}
+                </div>
+            </lightning-layout-item>
+        </lightning-layout>
+    </template>
+    <template if:false={userDetails}>
+        <p>No user data available</p>
+    </template>
+
+</template>

@@ -31,6 +31,8 @@
         <members>getterRecipe</members>
         <members>conditionalRenderingRecipe</members>
         <members>iterationWithTest</members>
+        <members>parentComponentJest</members>
+        <members>childComponentJest</members>
         <name>LightningComponentBundle</name>
     </types>
     <version>52.0</version>
