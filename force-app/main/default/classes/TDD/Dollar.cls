@@ -14,4 +14,9 @@ public with sharing class Dollar {
         return newDollar;
     }
 
+
+    public Boolean equals(Object obj) {
+        Dollar dollar = (Dollar) obj;
+        return this.amount == dollar.amount;
+     }
 }
