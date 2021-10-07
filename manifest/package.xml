@@ -23,6 +23,8 @@
         <members>CompleteRecognitionStrategy</members>
         <members>ThreeWayRecognitionStrategy</members>
         <members>ContractII_Tests</members>
+        <members>Dollar_Tests</members>
+        <members>Dollar</members>
         <name>ApexClass</name>
     </types>
     <types>
