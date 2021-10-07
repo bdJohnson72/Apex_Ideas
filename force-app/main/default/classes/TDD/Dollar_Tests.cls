@@ -8,7 +8,10 @@ public with sharing class Dollar_Tests {
     @IsTest
     static void testMultiplication(){
         Dollar five = new Dollar(5.0);
-        five.times(2);
-        System.assert(10.0 == five.amount);
+        System.assert(5.0 == five.amount);
+        Dollar ten = five.times(2);
+        System.assert(10.0 == ten.amount);
+        Dollar fifteen = five.times(3);
+        System.assert(15.0 == fifteen.amount);
     }
 }

@@ -9,8 +9,9 @@ public with sharing class Dollar {
         this.amount = amount;
     }
 
-    public void times(Integer multiple){
-        this.amount *= multiple;
+    public Dollar times(Integer multiple){
+        Dollar newDollar = new Dollar(amount * multiple);
+        return newDollar;
     }
 
 }
