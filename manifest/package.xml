@@ -25,6 +25,7 @@
         <members>ContractII_Tests</members>
         <members>Dollar_Tests</members>
         <members>Dollar</members>
+        <members>Franc</members>
         <name>ApexClass</name>
     </types>
     <types>
