@@ -3,7 +3,7 @@
  */
 
 public with sharing class Dollar {
-    public Decimal amount { get; private set; }
+    private Decimal amount;
 
     public Dollar(Decimal amount){
         this.amount = amount;
