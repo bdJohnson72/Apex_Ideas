@@ -2,11 +2,10 @@
  * Created by Brooks Johnson on 10/7/2021.
  */
 
-public with sharing class Dollar {
-    private Decimal amount;
+public with sharing class Dollar extends Money {
 
     public Dollar(Decimal amount){
-        this.amount = amount;
+       super(amount);
     }
 
     public Dollar times(Integer multiple){
@@ -15,8 +14,4 @@ public with sharing class Dollar {
     }
 
 
-    public Boolean equals(Object obj) {
-        Dollar dollar = (Dollar) obj;
-        return this.amount == dollar.amount;
-     }
 }

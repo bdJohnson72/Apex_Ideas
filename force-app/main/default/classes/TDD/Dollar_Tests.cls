@@ -13,19 +13,12 @@ public with sharing class Dollar_Tests {
         System.assert(new Dollar(15) == five.times(3));
     }
 
-    @IsTest
-    static void testFrancMultiplication(){
-        Franc five = new Franc(5.0);
-        System.assert(five == new Franc(5));
-        System.assert(new Franc(10) == five.times(2));
-        System.assert(new Franc(15) == five.times(3));
-    }
 
     @IsTest
     static void testEquality(){
-        System.assert(new Dollar(5.0).equals(new Dollar(5.0)));
-        Dollar five = new Dollar(5.0);
-        Dollar six = new Dollar(6.0);
+        System.assert(new Franc(5.0).equals(new Franc(5.0)));
+        Franc five = new Franc(5.0);
+        Franc six = new Franc(6.0);
         System.assert(false == five.equals(six));
     }
 
