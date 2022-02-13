@@ -36,6 +36,7 @@
         <members>iterationWithTest</members>
         <members>parentComponentJest</members>
         <members>childComponentJest</members>
+        <members>unitTest</members>
         <name>LightningComponentBundle</name>
     </types>
     <version>52.0</version>

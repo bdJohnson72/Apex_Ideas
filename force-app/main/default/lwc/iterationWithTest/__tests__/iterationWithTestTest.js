@@ -37,5 +37,11 @@ describe('c-iteration-with-test suite', ()=>{
         const lastElement = element.shadowRoot.querySelector('.iteratorList>:last-child>div:first-child');
         expect(lastElement.textContent).toBe('Aureja');
     })
+    test('correct time', () => {
+        const NOW = '2019-05-03T08:00:00.000Z';
+        const mockDateNow = jest
+            .spyOn(global.Date, 'now')
+            .mockImplementation(() => new Date(NOW).getTime());
+    })
 
 })

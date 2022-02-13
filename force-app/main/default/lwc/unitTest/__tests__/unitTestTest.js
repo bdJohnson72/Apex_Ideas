@@ -18,4 +18,26 @@ describe('unit test test suite', ()=> {
         const div = element.shadowRoot.querySelector('div');
         expect(div.textContent).toBe('Unit 5 Alive!');
     })
-})
+    it('should update the dom', () =>  {
+        const element = createElement('c-unit-test', { is: UnitTest});
+        document.body.appendChild(element);
+        const div = element.shadowRoot.querySelector('div');
+        element.unitNumber = 6;
+        return Promise.resolve().then(() => {
+            expect(div.textContent).toBe('Unit 6 Alive!');
+        })
+    });
+    it('Should update on event', () => {
+        const element = createElement('c-unit-test', { is: UnitTest});
+        document.body.appendChild(element);
+        const div = element.shadowRoot.querySelector('div');
+        const input = element.shadowRoot.querySelector('lightning-input');
+        input.value = 7;
+        input.dispatchEvent(new CustomEvent('change'));
+        return Promise.resolve().then(() => {
+            expect(div.textContent).toBe('Unit 7 Alive!');
+
+        })
+    })
+
+});
